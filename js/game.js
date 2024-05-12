@@ -11,14 +11,14 @@ export default class Game{
 
     makeMove(i){
 
-        if(this.inProgress()){
+        if(!this.inProgress()){
             return;
         }
         if(this.board[i]){
             return;
         }
         this.board[i]=this.turn;
-        if(this.findWinningCombs()){
+        if(!this.findWinningCombs()){
             this.nextTurn();
         }
         

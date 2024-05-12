@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+#app{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    font-weight: bold;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background: black;
+}
+
+.header> *{
+    color: azure;
+}
+
+.header_status{
+    padding: 12px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header_turn{
+    padding: 12px;
+    
+}
+
+.header__restart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+.header__restart:hover{
+    background: rgb(68, 67, 67);
+    transition: opacity 0.15s;
+}
+
+.header__restart:active{
+    opacity: 0.4;
+}
+
+.board{
+    display: grid;
+    background: lightblue;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+}
+
+.board__tile{
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: cursive;
+    color: black;
+
+}
+
+.board__tile:hover{
+    background-color: lightgray;
+}
+
+.board__tile__winner{
+    color: greenyellow;
+}
