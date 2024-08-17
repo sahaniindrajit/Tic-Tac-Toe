@@ -10,6 +10,15 @@
     display: flex;
     font-family: sans-serif;
     flex-direction: column;
+    
+    
+
+}
+.container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
 
 }
 
